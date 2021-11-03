@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<title>TutorMundi</title>
+	<link rel="icon" href="imagens/favicon-32x32.png">
+</head>
+<body>
+	<section id="home" class="d-flex">
+		<div class="container-fluid align-self-center">
+			<div class="row">
+				<div class="col-md-12">
+					<div>
+						<img class="Shape" src="imagens/livro.png">
+					</div>
+
+					<div>
+						<h1 class="Como-foi-a-ajuda-do Como-foi">
+							<strong>Como foi a ajuda <br> do tutor?</strong>
+						</h1>
+					</div>
+		
+					<div style="margin-bottom: 200px;">
+						<ul class="list-inline" style="clear: both;">
+							<li class="list-inline-item">
+								<button onclick="preencher_estrela(1)" class="btn btn-branco" type="button">
+									<img id="estrela1" src="imagens/estrela_vazia.svg" class="img-fluid">
+								</button>
+							</li>
+							<li class="list-inline-item">
+								<button onclick="preencher_estrela(2)" class="btn btn-branco" type="button">
+									<img id="estrela2" src="imagens/estrela_vazia.svg" class="img-fluid">
+								</button>
+							</li>
+							<li class="list-inline-item">
+								<button onclick="preencher_estrela(3)" class="btn btn-branco" type="button">
+									<img id="estrela3" src="imagens/estrela_vazia.svg" class="img-fluid">
+								</button>
+							</li>
+							<li class="list-inline-item">
+								<button onclick="preencher_estrela(4)" class="btn btn-branco" type="button">
+									<img id="estrela4" src="imagens/estrela_vazia.svg" class="img-fluid">
+								</button>
+							</li>
+							<li class="list-inline-item">
+								<button onclick="preencher_estrela(5)" class="btn btn-branco" type="button">
+									<img id="estrela5" src="imagens/estrela_vazia.svg" class="img-fluid">
+								</button>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<ul class="list-inline">
+							<li class="list-inline-item pular">
+								<button class="btn btn-branco-pular" type="button">
+									<h6><strong>PULAR</strong></h6>
+								</button>
+							</li>
+							<li class="list-inline-item">
+								<button onclick="confirmar(estrelas)" id="botao" class="btn btn-cinza rectangle3 confirmar" type="button">
+									<h6>Confirmar</h6>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+	</section>
+
+	<script>
+		var estrelas;
+		function preencher_estrela(valor) {
+			i = 1;
+			j = 5;
+			while(i <= valor){
+				document.getElementById('estrela'+i).src = "imagens/estrela_cheia.svg";
+				i++;
+			}
+			while(j > valor){
+				document.getElementById('estrela'+j).src = "imagens/estrela_vazia.svg";
+				j--;
+			}
+
+			
+			document.getElementById('botao').className = 'btn btn-azul rectangle3 confirmar';
+
+			estrelas = valor;
+		}
+		
+		function confirmar(qtd){
+			alert("Quantidade de estrelas selecionadas: "+qtd);	
+		}
+		
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+
+html, body, #home {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: white;
+}
+
+#botao {
+  box-shadow: 0px 18px 8px -16px gray; 
+}
+
+.Como-foi {
+  float: left;
+  margin: 366px 454px 334px 454px;
+  position: relative;
+  display: inline;
+}
+
+.Como-foi-a-ajuda-do {
+  width: 100%;
+  height: 68px;
+  margin: 24px auto 24px;
+  font-family: WorkSans-SemiBold;
+  font-size: 34px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -1.77px;
+  text-align: center;
+  color: #000000;
+
+}
+
+.Shape {
+  width: 132.4px;
+  height: 150px;
+  padding: 2.4px 2.9px 2.4px 2px;
+  margin: 100px 520.6px 24px 547px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+
+}
+
+ul li {
+  align-items: center;
+  display: inline-flex;
+}
+
+ul li img {
+  float: right;
+  margin: 0px;
+  position: relative;
+}
+
+.btn-branco-pular {
+  background-color: white;
+  color: #00BFFF;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-branco {
+  background-color: white;
+  color: black;
+  padding-right: 0;
+  padding-left: 0;
+  border:none!important;
+}
+
+.btn-branco:hover {
+  background-color: white;
+  color: black;
+  border:none!important;
+}
+
+.rectangle3 {
+  width: 149px;
+  height: 40px;
+  margin: 0 0 0 28px;
+  padding: 8px 19px 0;
+  border-radius: 100px;
+  -webkit-border-radius:100px;
+  -moz-border-radius:100px;
+  background-color: #2cc6d0;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn-cinza{
+  background-color: #C0C0C0;
+  color: white;
+}
+
+.btn-azul {
+  background-color: #00BFFF;
+  color: white;
+}
+
+.btn-azul:hover {
+  background-color: #2cc6d0;
+  color: white;
+}
+
+
+.confirmar {
+  width: 160px;
+  height: 40px;
+  margin: 0 30px 8px;
+  font-family: WorkSans-SemiBold;
+  font-size: 16px;
+  font-weight: 600px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  /*letter-spacing: 0.5px;*/
+  color: #ffffff;
+  text-align: center;
+}
+
+.pular {
+  width: 56px;
+  height: 24px;
+  margin: 9px 28px 7px 0;
+  font-family: WorkSans-SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .rectangle2 {
+    margin: 2em;
+  }
+  .Envie-um-elogio {
+    width: 100%;
+    margin: 1em;
+  }
+   .Deixe-um-recado {
+    width: 100%;
+    margin: 1em;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1 {
+    font-size: 3em;
+  }
+  .rectangle2 {
+    margin: 3em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 4em;
+  }
+  .rectangle2 {
+    margin: 4em;
+  }
+  .Envie-um-elogio {
+    width: 100%;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  h1 {
+    font-size: 5em;
+  }
+  .rectangle2 {
+    margin: 4em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 6em;
+  }
+}
